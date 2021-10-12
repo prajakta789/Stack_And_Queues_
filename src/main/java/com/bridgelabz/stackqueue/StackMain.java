@@ -2,20 +2,25 @@ package com.bridgelabz.stackqueue;
 
 public class StackMain<K> {
 
+	public static void main(String args[]){
+		//  stack implement use linked list
 
+		System.out.println("Welcome to Stacks and Queues");
 
-    public static void main(String args[]){
-        //  stack implement use linked list
+		//create object and give the push method value
 
-        System.out.println("Welcome to Stacks and Queues");
+		Stack StacksandQueuesdemo = new Stack();
 
-        //create object and give the push method value
+		StacksandQueuesdemo.push(56);
+		StacksandQueuesdemo.push(30);
+		StacksandQueuesdemo.push(70);
+		StacksandQueuesdemo.display();
 
-          Stack StacksandQueuesdemo = new Stack();
+		System.out.println("\nPeek Value "+StacksandQueuesdemo.peek());
 
-        StacksandQueuesdemo.push(56);
-        StacksandQueuesdemo.push(30);
-        StacksandQueuesdemo.push(70);
-        StacksandQueuesdemo.display();
+		StacksandQueuesdemo.pop();
+		StacksandQueuesdemo.pop();
+		System.out.println("After Pop");
+		StacksandQueuesdemo.display();
 }
 }
